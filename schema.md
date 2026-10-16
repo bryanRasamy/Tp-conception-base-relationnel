@@ -16,3 +16,9 @@ On ne peut pas simplement ajouter une colonne `categorie VARCHAR(50)` dans la ta
 **Exemple:**
 - Romazava: Plat malagasy
 - Ravitoto sy henakisoa: Plat malgache
+
+## Etape 3: Les commandes
+- COMMANDE (**id_commande**, date)
+- DETAIL_COMMANDE (**id_detail_commande**, **#id_commande**, **#id_plat**, quantite, prix)
+
+On place la quantite dans `detai_commande`
