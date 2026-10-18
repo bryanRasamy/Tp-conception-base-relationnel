@@ -30,3 +30,12 @@ On place la quantite dans `detai_commande`
 La clé étrangère est `NOT NUL`
 
 `RIGHT JOIN` pour la jointure
+
+## Etape 5: Serveurs et tables
+- SERVEUR (**id_serveur**, nom)
+- TABLE (**id_table**, libelle)
+- COMMANDE (**id_commande**, **#id_client?**, **#id_serveur**, **#id_table?**, date)
+
+Une table de la salle et une commande sont deux choses différentes, une table peut avoir plusieurs commande mais une commande n'a pas plusieurs table.
+
+Le nom table pose problème en SQL car cela peut confondre avec `table` en tant que SQL alors qu'ici c'est une table de la salle.
